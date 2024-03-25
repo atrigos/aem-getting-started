@@ -8,7 +8,7 @@ export function submitSuccess(e, form) {
       thankYouMessage = document.createElement('div');
       thankYouMessage.className = 'form-message success-message';
     }
-    thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Thanks for your submission';
+    thankYouMessage.innerHTML = payload?.body?.thankYouMessage || 'Your submission has been received and noted.';
     form.prepend(thankYouMessage);
     if (thankYouMessage.scrollIntoView) {
       thankYouMessage.scrollIntoView({ behavior: 'smooth' });
